@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kami.fileexplorer.widget.FSRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.kami.fileexplorer.widget.FSEditText
+            android:id="@+id/cifs_area_text"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/cifs_area_hint"
+            android:theme="@style/AuthDialogEditStyle"
+            style="@style/AuthDialogEditStyle"/>
+
+        <com.kami.fileexplorer.widget.FSEditText
+            android:id="@+id/cifs_username_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/auth_username_hint"
+            android:theme="@style/AuthDialogEditStyle"
+            style="@style/AuthDialogEditStyle"/>
+
+        <com.kami.fileexplorer.widget.FSEditText
+            android:id="@+id/cifs_password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/auth_password_hint"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textPassword"
+            android:theme="@style/AuthDialogEditStyle"
+            style="@style/AuthDialogEditStyle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.kami.fileexplorer.widget.FSFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.kami.fileexplorer.widget.FSButton
+                    android:id="@+id/cancel_btn"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/selector_item_focus"
+                    android:text="取消"/>
+            </com.kami.fileexplorer.widget.FSFrameLayout>
+
+            <com.kami.fileexplorer.widget.FSFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.kami.fileexplorer.widget.FSButton
+                    android:id="@+id/link_btn"
+                    android:layout_width="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/selector_item_focus"
+                    android:text="连接"/>
+            </com.kami.fileexplorer.widget.FSFrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.kami.fileexplorer.widget.FSRelativeLayout>
